@@ -1,0 +1,644 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #e4e4e4;
+}
+
+.hero {
+  background-color: #e4e4e4;
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.heroHome {
+  background-color: #e4e4e4;
+}
+
+/* header */
+
+.header {
+  width: 100%;
+  height: 10%;
+  min-height: 70px;
+  max-height: 70px;
+  background-color: #e4e4e4;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 0px 0px 15px 15px;
+  border-bottom: 1px solid #cccccc;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+.header > .logo {
+  height: 100%;
+  float: left;
+  min-width: 200px;
+  max-width: 200px;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.header > .logo > .img__logo {
+  height: 90%;
+  width: 150px;
+  object-fit: contain;
+  margin-top: 5px;
+}
+
+.header > .button {
+  float: right;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-right: 20px;
+}
+
+.header > .button > a {
+  height: 60%;
+  width: 120px;
+  color: #333333;
+  border: 2px solid blueviolet;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.header > .button > a > i {
+  margin-right: 7px;
+}
+
+.header > .button > a:hover {
+  color: #fafafa;
+  background-color: blueviolet;
+}
+
+/* home */
+
+.container {
+  width: 100vw;
+}
+
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e4e4e4;
+}
+
+.homeContainer > .top {
+  height: 250px;
+  width: 100%;
+  background-image: url("https://www.egeniq.nl/sites/default/files/2020-06/frontend_webdeveloper.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.homeContainer > .bottom {
+  height: 450px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.homeContainer > .bottom > .image {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  margin-top: -100px;
+}
+
+.homeContainer > .bottom > .image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.homeContainer > .bottom > .text {
+  width: 100%;
+  height: calc(100% - 200px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background: transparent;
+}
+
+.homeContainer > .bottom > .text > h1 {
+  font-size: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #333333;
+}
+
+.homeContainer > .bottom > .text > h1 > span,
+p {
+  text-align: center;
+}
+
+.homeContainer > .bottom > .text > h1 > span {
+  line-height: 55px;
+  letter-spacing: -2px;
+}
+
+.homeContainer > .bottom > .text > h1 > p {
+  font-size: 27px;
+}
+
+.homeContainer > .bottom > .text > h4 {
+  font-size: 25px;
+  color: #fafafa;
+  background-color: blueviolet;
+  padding: 2px 5px;
+  margin-top: 20px;
+}
+
+.homeContainer > .bottom > .text > h4 > a {
+  text-decoration: none;
+  color: #fafafa;
+}
+
+.homeContainer > .bottom > .button {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  margin-top: 30px;
+  justify-content: center;
+  background: transparent;
+}
+
+.homeContainer > .bottom > .button > a {
+  height: 50%;
+  width: 150px;
+  color: #333333;
+  border: 2px solid blueviolet;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 15px;
+  text-decoration: none;
+}
+
+.homeContainer > .bottom > .button > a > i {
+  margin-right: 5px;
+  font-size: 18px;
+}
+
+.homeContainer > .bottom > .button > a:hover {
+  color: #fafafa;
+  background-color: blueviolet;
+}
+
+/* about */
+
+.heroAbout {
+  background-color: #fcfcfc;
+}
+
+.aboutContainer {
+  background-color: #e4e4e4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container > .textField {
+  width: 80%;
+  color: #333333;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aboutContainer > .textField > .heading {
+  padding: 10px;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.aboutContainer > .textField > .content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutContainer > .textField > .content > .image {
+  width: 40%;
+  max-width: 400px;
+  margin-top: 10px;
+}
+
+.aboutContainer > .textField > .content > .image > img {
+  width: 100%;
+  object-fit: contain;
+  border-radius: 15px;
+}
+
+.aboutContainer > .textField > .content > .text {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: center;
+  margin-left: 50px;
+  margin-top: 30px;
+}
+
+.aboutContainer > .textField > .content > .text > p {
+  margin-top: 10px;
+  width: 90%;
+}
+
+.spanOne {
+  font-size: 20px;
+  color: #111111;
+  padding: 0 10px;
+  text-decoration: none;
+}
+
+.ResumeIcon {
+  border: 2px solid blueviolet;
+  margin: auto;
+  margin-bottom: 30px;
+  margin-top: 70px;
+  width: 150px;
+  color: #333333;
+  height: 50px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.fa-arrow-right {
+  margin-left: 5px;
+}
+
+.ResumeIcon:hover {
+  color: #fafafa;
+  background-color: blueviolet;
+}
+
+/* works */
+
+.portfolioContainer {
+  background-color: #e4e4e4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portfolioContainer > h1 {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.portfolioContainer > .content {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.work {
+  display: flex;
+  align-items: center;
+}
+
+.odd {
+  margin-bottom: 40px;
+}
+
+.work > .image {
+  width: 50%;
+  width: 400px;
+}
+
+.work > .image > img {
+  width: 400px;
+  object-fit: contain;
+  border: 1px solid #cccccc;
+}
+
+.work > .text {
+  width: 50%;
+  margin: 0 20px;
+  margin-top: 10px;
+}
+
+.even {
+  margin-bottom: 40px;
+}
+
+.visitButton {
+  border: 2px solid blueviolet;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  width: 130px;
+  color: #333333;
+  height: 50px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.fa-arrow-right {
+  margin-left: 10px;
+}
+
+.visitButton:hover {
+  color: #fafafa;
+  background-color: blueviolet;
+}
+
+.containerDeactive {
+  display: none;
+}
+
+/* contact */
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.contact > h1 {
+  margin-bottom: 30px;
+}
+
+section {
+  width: 70%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  border: 1px solid #cccccc;
+  background-color: #cccccc;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+section > h2 {
+  margin-bottom: 20px;
+}
+
+.contact > section > .form {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.form > form > label {
+  color: #999999;
+}
+
+.form > form > span {
+  color: #ff0f0f;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  display: none;
+}
+
+.star {
+  color: #333333;
+}
+
+.form > form > input {
+  width: 100%;
+  height: 40px;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  color: #333333;
+  outline: none;
+  font-size: 17px;
+  background: transparent;
+  border-bottom: 1px solid #bbbbbb;
+}
+
+.form > form > button {
+  height: 50px;
+  width: 120px;
+  font-family: "Poppins", sans-serif;
+  color: #333333;
+  border: 2px solid blueviolet;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  margin-top: 20px;
+  background: transparent;
+}
+
+.form > form > button:hover {
+  color: #fafafa;
+  background-color: blueviolet;
+}
+
+.form > form > button > i {
+  margin-left: 10px;
+}
+
+.contact > section > .sending {
+  margin-top: 30px;
+  text-align: center;
+  color: #888888;
+  font-family: "Poppins", sans-serif;
+  display: none;
+}
+
+.contact > section > .popup {
+  margin-top: 30px;
+  text-align: center;
+  color: blueviolet;
+  font-family: "Poppins", sans-serif;
+  display: none;
+}
+
+.contact > .other {
+  width: 80%;
+  max-width: 540px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 10px;
+  border-radius: 20px;
+  border: 1px solid #cccccc;
+  background-color: #cccccc;
+  margin-bottom: 30px;
+}
+
+.contact > .other > a {
+  text-decoration: none;
+  color: #333333;
+  height: 40px;
+  width: 100px;
+  border: 2px solid blueviolet;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.contact > .other > a:hover {
+  color: #fafafa;
+  background-color: blueviolet;
+}
+
+.contact > .other > a > i {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+/* footer */
+
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer > .socialButtons {
+  margin-top: 30px;
+}
+
+footer > .socialButtons > a {
+  color: #333333;
+  font-size: 20px;
+  margin: 0 5px;
+  transition: all 0.2s ease;
+}
+
+footer > .socialButtons > a:hover {
+  color: blueviolet;
+}
+
+footer > .copyright {
+  margin-bottom: 20px;
+  color: #666666;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 875px) {
+  .work > .image > img {
+    width: 350px;
+  }
+}
+
+@media only screen and (max-width: 870px) {
+  .aboutContainer > .textField > .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .aboutContainer > .textField > .content > .image {
+    width: 100%;
+  }
+
+  .aboutContainer > .textField > .content > .text {
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  .ResumeIcon {
+    margin: auto;
+    margin-bottom: 30px;
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 835px) {
+  .work > .image {
+    width: 90%;
+  }
+  .work {
+    flex-direction: column;
+  }
+  .work > .image > img {
+    width: 100%;
+  }
+
+  .work > .text {
+    width: 90%;
+    margin: 0 20px;
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .portfolioContainer > .content {
+    width: 90%;
+  }
+  .work {
+    flex-direction: column;
+  }
+  .work > .image > img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  .homeContainer > .bottom > .text > h1 {
+    font-size: 30px;
+  }
+}
